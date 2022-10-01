@@ -13,7 +13,7 @@ public class Main {
         double y = scanner.nextDouble();
 
         var calculator = new Calculator();
-        double result = calculator.Calculate(x, y);
+        double result = calculator.calculate(x, y);
         System.out.println("Result: " + result);
     }
 }

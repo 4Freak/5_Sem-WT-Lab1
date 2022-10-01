@@ -15,7 +15,7 @@ public class Flat implements Contain {
         this.bottom = bottom;
     }
 
-    public boolean IsContain(double x, double y){
+    public boolean isContain(double x, double y){
         return x >= this.left && x <= this.right && y <= this.top && y >= this.bottom;
     }
 }

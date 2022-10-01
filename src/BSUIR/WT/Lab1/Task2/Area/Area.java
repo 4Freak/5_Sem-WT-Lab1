@@ -10,9 +10,9 @@ public class Area implements Contain {
         this.flats = flats;
     }
 
-    public boolean IsContain(double x, double y) {
+    public boolean isContain(double x, double y) {
         for(Flat flat : flats){
-            if (flat.IsContain(x, y)){
+            if (flat.isContain(x, y)){
                 return true;
             }
         }

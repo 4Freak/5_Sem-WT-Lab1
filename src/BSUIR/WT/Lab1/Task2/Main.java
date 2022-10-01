@@ -20,7 +20,7 @@ public class Main {
         double x = scanner.nextDouble();
         System.out.print("Enter y: ");
         double y = scanner.nextDouble();
-        boolean result = taskArea.IsContain(x, y);
+        boolean result = taskArea.isContain(x, y);
         System.out.println("Result:s " + result);
     }
 }
