@@ -1,6 +1,6 @@
-package BSUIR.WT.Lab1.Task4;
+package BSUIR.WT.Lab1.Task7;
 
-import BSUIR.WT.Lab1.Task4.PrimeChecker.PrimeChecker;
+import BSUIR.WT.Lab1.Task7.Sorter.Sorter;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -16,16 +16,16 @@ public class Main {
 			int [] arr = new int[len];
 			System.out.print("Start array: ");
 			for (int i = 0; i < len; i++){
-				arr[i] = random.nextInt(1, Integer.MAX_VALUE);
+				arr[i] = random.nextInt(1, 100);
 				System.out.print(arr[i] + " ");
 			}
 			System.out.println();
 
-			var primeChecker = new PrimeChecker();
-			var result = primeChecker.getPrimeNumberID(arr);
+			var sorter = new Sorter();
+			sorter.shellSort(arr);
 			System.out.print("Result: ");
-			for (var el : result){
-				System.out.print(el + " ");
+			for (int i = 0; i < arr.length; i++){
+				System.out.print(arr[i] + " ");
 			}
 		}
 	}
